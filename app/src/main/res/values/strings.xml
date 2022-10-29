@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="name_box">Text Box</string>
+    <string name="enter_word">Enter Your Word</string>
+    <string name="find">Find</string>
+    <string name="empty_field"></string>
+    <string name="frequent_word_1">Frequent Word 1</string>
+    <string name="frequent_word_2">Frequent Word 2</string>
+    <string name="frequent_word_3">Frequent Word 3</string>
+    <string name="new_word">New Word</string>
+    <string name="remove">Remove</string>
+    <string name="word_text_box">Word</string>
+    <string name="frequency_text_box">Frequency</string>
+    <string name="meaning_text_box">Meaning</string>
+    <string name="add_button">Add</string>
+    <string name="clear_button">Clear</string>
+    <string name="home_page_button">Home Page</string>
+    <string name="error_word_text">Word name is required.</string>
+    <string name="error_freq_text">Cannot be 0.</string>
+    <string name="error_meaning_text">Cannot be empty.</string>
+</resources>

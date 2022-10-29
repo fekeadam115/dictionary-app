@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddWord">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/empty_field"
+            android:ems="10"
+            android:id="@+id/wordEntryField"
+            android:background="#26000000"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.82" app:layout_constraintVertical_bias="0.050000012"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/empty_field"
+            android:ems="10"
+            android:id="@+id/frequencyTextField"
+            android:background="#26000000"
+            app:layout_constraintTop_toBottomOf="@+id/wordEntryField"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.050000012"
+            app:layout_constraintStart_toStartOf="@+id/wordEntryField"
+            app:layout_constraintEnd_toEndOf="@+id/wordEntryField"/>
+    <TextView
+            android:text="@string/word_text_box"
+            android:layout_width="wrap_content"
+            android:textColor="#800080"
+            android:layout_height="wrap_content" android:id="@+id/wordTextBox"
+            app:layout_constraintEnd_toStartOf="@+id/wordEntryField"
+            app:layout_constraintStart_toStartOf="@+id/frequencyTextBox"
+            app:layout_constraintBottom_toBottomOf="@+id/wordEntryField"
+            app:layout_constraintTop_toTopOf="@+id/wordEntryField" app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="@string/add_button"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content" android:id="@+id/addWordButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meaningTextField"
+            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintStart_toStartOf="@+id/meaningTextField"
+            app:layout_constraintEnd_toEndOf="@+id/meaningTextField" android:onClick="addWordButton"/>
+    <Button
+            android:text="@string/clear_button"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content" android:id="@+id/clearButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meaningTextField"
+            app:layout_constraintStart_toStartOf="@+id/meaningTextField"
+            app:layout_constraintEnd_toEndOf="@+id/meaningTextField" android:onClick="clearButton"/>
+    <Button
+            android:text="@string/home_page_button"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content" android:id="@+id/homePageButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meaningTextField"
+            app:layout_constraintVertical_bias="0.85"
+            app:layout_constraintStart_toStartOf="@+id/meaningTextField"
+            app:layout_constraintEnd_toEndOf="@+id/meaningTextField"/>
+    <TextView
+            android:text="@string/frequency_text_box"
+            android:layout_width="wrap_content"
+            android:textColor="#800080"
+            android:layout_height="wrap_content" android:id="@+id/frequencyTextBox"
+            app:layout_constraintBottom_toBottomOf="@+id/frequencyTextField"
+            app:layout_constraintTop_toTopOf="@+id/frequencyTextField"
+            app:layout_constraintEnd_toStartOf="@+id/frequencyTextField" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="@string/meaning_text_box"
+            android:layout_width="wrap_content"
+            android:textColor="#800080"
+            android:layout_height="wrap_content" android:id="@+id/meaningTextBox"
+            app:layout_constraintTop_toBottomOf="@+id/frequencyTextField"
+            app:layout_constraintBottom_toTopOf="@+id/meaningTextField"
+            app:layout_constraintVertical_bias="0.92" app:layout_constraintEnd_toEndOf="@+id/frequencyTextField"
+            app:layout_constraintStart_toStartOf="@+id/frequencyTextBox" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="326dp"
+            android:layout_height="283dp"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/meaningTextField"
+            android:background="#26000000"
+            app:layout_constraintEnd_toEndOf="@+id/frequencyTextField"
+            app:layout_constraintStart_toStartOf="@+id/meaningTextBox" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frequencyTextField"
+            app:layout_constraintVertical_bias="0.19"/>
+    <TextView
+            android:text="@string/empty_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/errorWordField"
+            app:layout_constraintStart_toStartOf="@+id/wordEntryField"
+            app:layout_constraintEnd_toEndOf="@+id/wordEntryField"
+            app:layout_constraintBottom_toTopOf="@+id/wordEntryField" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"/>
+    <TextView
+            android:text="@string/empty_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/errorFreqText"
+            app:layout_constraintStart_toStartOf="@+id/frequencyTextField"
+            app:layout_constraintEnd_toEndOf="@+id/frequencyTextField" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/frequencyTextField" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="@string/empty_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/errorMeaningField"
+            app:layout_constraintEnd_toEndOf="@+id/meaningTextField"
+            app:layout_constraintStart_toStartOf="@+id/meaningTextField" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/meaningTextField" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintHorizontal_bias="1.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
